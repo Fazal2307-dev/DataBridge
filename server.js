@@ -15,7 +15,7 @@ database.connect((error) =>{
     }
     console.log("My sql database is connected....")
 })
-// Middle ware for parsing the 
+// Middleware for parsing the 
 app.use(express.urlencoded({extended:true}))
 app.get('/',(req,res)=>{
  const htmlfile = path.join(__dirname,'index.html')
